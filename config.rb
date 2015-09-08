@@ -1,72 +1,73 @@
-###
-# Compass
-###
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
-
-###
+# --------------------------------------------------------------------------------------------------
 # Helpers
-###
+# --------------------------------------------------------------------------------------------------
 
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+helpers do
+  # Helpers are defined in and can be added to `helpers/custom_helpers.rb`.
+  # In case you require helpers within `config.rb`, they can be added here.
+end
 
-# Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+# --------------------------------------------------------------------------------------------------
+# Extensions
+# --------------------------------------------------------------------------------------------------
 
-set :css_dir, 'stylesheets'
+# Use LiveReload
+activate :livereload
 
-set :js_dir, 'javascripts'
+# Use Search Engine Sitemap
+set :url_root, data.config.site.root_url
+activate :search_engine_sitemap
 
-set :images_dir, 'images'
+# User Bower to manage vendor scripts
+activate :bower
 
-# Build-specific configuration
+
+# --------------------------------------------------------------------------------------------------
+# Paths
+# --------------------------------------------------------------------------------------------------
+
+set :css_dir,     'stylesheets'
+set :fonts_dir,   'fonts'
+set :images_dir,  'images'
+set :js_dir,      'javascripts'
+
+# Pretty URLs - See https://middlemanapp.com/advanced/pretty_urls/
+activate :directory_indexes
+
+
+# --------------------------------------------------------------------------------------------------
+# Build configuration
+# --------------------------------------------------------------------------------------------------
+
 configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
+  # Exclude any vendor components (bower or custom builds) in the build
+  ignore 'stylesheets/vendor/*'
+  ignore 'javascripts/vendor/*'
 
-  # Minify Javascript on build
-  # activate :minify_javascript
+  # Minify CSS
+  activate :minify_css
 
-  # Enable cache buster
-  # activate :asset_hash
+  # Minify Javascript
+  activate :minify_javascript
 
-  # Use relative URLs
-  # activate :relative_assets
+  # Minify HTML
+  activate :minify_html, {
+    remove_quotes: false,
+    remove_input_attributes: false
+  }
 
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  # Compress images (default)
+  require "middleman-smusher"
+  activate :smusher
+
+  # Compress ALL images (advanced)
+  # Before activating the below, follow setup instructions on https://github.com/toy/image_optim
+  # activate :imageoptim do |options|
+  #   options.pngout = false # set to true when pngout is also installed
+  # end
+
+  # Uniquely-named assets (cache buster)
+  # Exception: svg & png in images folder because they need to be interchangeable by JS
+  activate :asset_hash, ignore: [/images\/(.*\.png|.*\.svg)/]
 end
