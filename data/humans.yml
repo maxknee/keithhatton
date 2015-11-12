@@ -1,15 +1,11 @@
 # humans.txt content - more information here: http://humanstxt.org/
 team:
-  - name: Jane Doe
-    role: Example Role 1
-    contact: "@twitterhandle"
-  - name: John Doe
-    role: Example Role 2
-    contact: "http://www.example.com"
-
-shoutouts:
-  - name: Example company
-    contact: http://www.example.com
+  - name: Max Knee
+    role: Developer 
+    contact: "http://www.maxknee.com"
+  - name: Keith Hatton
+    role: Designer
+    contact: "http://www.keithhatton.com"
 
 languages:
   - English
@@ -24,6 +20,9 @@ components_used:
   - Modernizr
   - Normalize.css
   - html5shiv
+  - Babel
+  - Grunt Sass
+  - ES2015
 
 software_used:
   - Sublime Text

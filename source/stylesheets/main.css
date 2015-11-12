@@ -185,4 +185,32 @@ html {
 body {
   border-color: #f7f7f7; }
 
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .container .image-left,
+  .container .image-center,
+  .container .image-right {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 31.7615656014%; }
+    .container .image-left:last-child,
+    .container .image-center:last-child,
+    .container .image-right:last-child {
+      margin-right: 0; }
+
+footer {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  footer:last-child {
+    margin-right: 0; }
+
 /*# sourceMappingURL=main.css.map */

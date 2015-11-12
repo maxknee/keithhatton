@@ -1,0 +1,16 @@
+.container {
+  @include clearfix;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .image-left,
+    .image-center,
+    .image-right {
+        @include span-columns(4);
+    }
+}
+
+footer {
+  @include span-columns(12);
+}
