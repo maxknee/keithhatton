@@ -1,20 +1,11 @@
-%nav.topnav
+%nav.topnav{role: "navigation"}
 	%ul.mainnav
-		%li 
-			hey
-			%a{:href => "Home"}
-		%li 
-			hey
-			%a{:href => "Design"}
-		%li 
-			hey
-			%a{:href => "Print"}
-		%li 
-			hey
-			%a{:href => "Digital"}
-		%li 
-			hey
-			%a{:href => "Physical"}
+		%li{nav_active("page.html")}
+			= link_to "Resume", "page.html"
+		%li
+			= link_to "Portfolio", "page.html"
+		%li
+			= link_to "Conatct", "contact.html"
 	.logo
 		keif
 		%a{:href => "keithhatton"}

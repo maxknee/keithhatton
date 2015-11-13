@@ -3,8 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,500,600,700);
 
 
-
-$base-font-family: 'Work Sans', sans-serif;
+$base-font-family: 'myriad-pro', sans-serif;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
@@ -21,10 +20,15 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$yellow: #CCB13B;
+$purple: #7F5299;
+$blue: #5EFFFE;
+$green: #20CC50;
+$gray: #5D5D5D;
+
 
 // Font Colors
 $base-font-color: $dark-gray;

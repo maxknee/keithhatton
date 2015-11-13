@@ -1,8 +1,11 @@
+.html {
+    font-size: $base-font-size;
+    overflow: hidden;
+}
+
 .container {
   @include clearfix;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+  @include outer-container(100%);
     
     .image-left,
     .image-center,
@@ -13,4 +16,9 @@
 
 footer {
   @include span-columns(12);
+}
+
+body {
+    font-size: 1rem;
+    background-color: $secondary-background-color;
 }
