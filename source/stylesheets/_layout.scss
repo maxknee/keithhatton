@@ -3,19 +3,35 @@
     overflow: hidden;
 }
 
+main {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  padding-top: 2%;
+  padding-bottom: 2%;
+  @include span-columns(12);
+}
+
 .container {
   @include clearfix;
   @include outer-container(100%);
-    
-    .image-left,
-    .image-center,
-    .image-right {
-        @include span-columns(4);
-    }
+
+  .image-left,
+  .image-center,
+  .image-right {
+    @include span-columns(4);
+  }
 }
 
 footer {
+  @include background-image(linear-gradient($medium-gray, $dark-gray));
   @include span-columns(12);
+  height: 6rem;
+  
+  .footer-body{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 body {

@@ -1,11 +1,13 @@
 .topnav {
 	@include clearfix;
-	@include outer-container(1400px);
-	@include background-image(linear-gradient($dark-gray, $medium-gray, transparent 50%));
-	height: 5rem;
+	@include outer-container(100%);
+	@include background-image(linear-gradient($dark-gray, $medium-gray));
+	height: 6rem;
 
 	ul {
+    margin-left: 10px;
 		li {
+      padding-top: 15px;
 			display: inline-block;
 			@include span-columns(2.5);
 
