@@ -1,6 +1,4 @@
 %header{role: "banner"}
-  %h1= link_to data.config.site.title, "/", rel: "home"
-
   %nav.topnav{role: "navigation"}
     %ul.mainnav
       %li{nav_active("page.html")}
@@ -10,5 +8,4 @@
       %li
         = link_to "Conatct", "contact.html"
     .logo
-      keif
-      %a{:href => "keithhatton"}
+      %h1= link_to image_tag("../images/keithscream.png"), "/", rel: "home"

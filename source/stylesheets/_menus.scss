@@ -24,5 +24,15 @@
 	.logo {
 		@include span-columns(4);
 		float: right;
+
+		h1 {
+			a {
+				@include clearfix;
+
+				img {
+					padding: 5px;
+				}
+			}
+		}
 	}
 }
