@@ -1,15 +1,32 @@
 {
-  "name": "middleman-basis",
+  "name": "keithhatton",
   "version": "0.5.1",
-  "description": "Middleman Basis - The foundation for any middleman site.",
+  "description": "keith hatton",
   "author": {
     "name": "Patrik Affentranger",
     "url": "http://patrikaffentranger.me"
   },
   "license": "MIT",
-  "homepage": "https://github.com/pzi/middleman-basis",
-  "private": true,
+  "homepage": "http://www.keithhatton.com",
   "dependencies": {
-    "normalize.css": "~3.0.3"
-  }
+    "normalize.css": "~3.0.3",
+    "jquery": "~2.1.4"
+  },
+  "authors": [
+    "maxknee <maxknee@gmail.com>"
+  ],
+  "main": "",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/bower",
+    "test",
+    "tests"
+  ]
 }

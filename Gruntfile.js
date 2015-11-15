@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+  grunt.loadNpmTasks('grunt-wiredep');
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     middleman: {
@@ -19,7 +20,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    "babel": {
+    babel: {
       options: {
         sourceMap: true,
         presets: ['es2015', 'react']
@@ -43,12 +44,17 @@ module.exports = function(grunt) {
         files: ['source/javascripts/*.js', 'source/javascripts/vendor/*.js'],
         tasks: ['babel:dist']
       }
+    },
+    wiredep: {
+      task: {
+        src: 'source/layouts/layout.html.haml'          
+      }
     }
   });
   grunt.loadNpmTasks('grunt-middleman');
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-  grunt.registerTask('default', ['middleman', 'sass', 'babel']);
-  grunt.registerTask('watch', ['sass', 'babel', 'middleman', 'watch']);
+  grunt.registerTask('default', ['sass', 'babel', 'wiredep']);
+  grunt.registerTask('watch', ['sass', 'wiredep', 'babel', 'middleman', 'watch']);
   grunt.loadNpmTasks('grunt-contrib-watch');
 }
 

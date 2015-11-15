@@ -22,6 +22,8 @@ activate :search_engine_sitemap
 # User Bower to manage vendor scripts
 activate :bower
 
+sprockets.import_asset 'jquery'
+
 
 # --------------------------------------------------------------------------------------------------
 # Paths
@@ -35,6 +37,8 @@ set :js_dir,      'javascripts'
 # Pretty URLs - See https://middlemanapp.com/advanced/pretty_urls/
 activate :directory_indexes
 
+
+page "/project/*", :layout => "project"
 
 # --------------------------------------------------------------------------------------------------
 # Build configuration

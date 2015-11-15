@@ -7,6 +7,7 @@ gem 'middleman-search_engine_sitemap'
 gem 'bourbon'
 gem 'neat'
 gem 'bitters'
+gem "jquery-middleman"
 
 
 # Source minification
