@@ -21,6 +21,8 @@ main {
   .image-center,
   .image-right {
     @include span-columns(4);
+    margin-left: 0;
+    margin-right: 0;
 
     img {
         height: 100%;
