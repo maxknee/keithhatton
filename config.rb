@@ -56,10 +56,10 @@ configure :build do
   activate :minify_javascript
 
   # Minify HTML
-  activate :minify_html, {
-    remove_quotes: false,
-    remove_input_attributes: false
-  }
+  #activate :minify_html, {
+   # remove_quotes: false,
+   # remove_input_attributes: false
+ # }
 
   # Compress images (default)
   require "middleman-smusher"
