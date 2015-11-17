@@ -217,7 +217,9 @@ main {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
-    width: 31.7615656014%; }
+    width: 31.7615656014%;
+    margin-left: 0;
+    margin-right: 0; }
     .container .image-left:last-child,
     .container .image-center:last-child,
     .container .image-right:last-child {
