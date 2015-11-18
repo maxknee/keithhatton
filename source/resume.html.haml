@@ -8,10 +8,10 @@
 ---
 
 %main{role: 'resume'}
-  %section.leader
-    %h1 = Keith Hatton's Resume
-    %h2 = keithhatton@gmail.com
-    %h2 = A designer in Philadelphia
+  %section.resume-contact
+    %h1= "Keith's Resume"
+    %h2= "Philadelphia"
+    %h2= mail_to "KeithHatton@gmail.com", 'Email Me', subject: "Reaching Out"
 
   %section.about
     %p My name is keith and I am design things in philadelphia. I like cool thigns like cars and bicycles. I also make screen protectors and its pretty cool. I live with Brendy and a cat and I am obsessed with back to the future for some reason... But read my resume and feel free to reach out to me to hire me!!!
@@ -23,19 +23,5 @@
       %li More expereince
       %li More experience
       %li stuff
----
-  title: Keith's Resume
-  body_classes: resume
-  meta_description: Keith's resume
-  meta_keywords:
-    - graphic design
-    - industrial design
----
 
-%main{role: 'resume'}
-  .container
-    %section.resume-contact
-      %h1= "Keith's Resume"
-      %h2= "Philadelphia"
-      %h2= mail_to "KeithHatton@gmail.com", 'Email Me', subject: "Reaching Out"
   

@@ -9,6 +9,7 @@ main {
   margin-right: 10px;
   padding-top: 2%;
   padding-bottom: 2%;
+  min-height: 500px;
 }
 
 .container {
@@ -21,12 +22,14 @@ main {
   .image-center,
   .image-right {
     @include span-columns(4);
-    margin-left: 0;
-    margin-right: 0;
 
     img {
         height: 100%;
         max-height: 400px;
+        @include transition(0.2s ease-in-out all);
+        &:hover {
+          @include transform(scale(1.1));
+        }
     }
   }
 }
@@ -44,5 +47,5 @@ footer {
 
 body {
     font-size: 1rem;
-    background-color: $secondary-background-color;
+    background-color: darken($secondary-background-color, 10%);
 }

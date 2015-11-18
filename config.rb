@@ -24,6 +24,7 @@ activate :bower
 
 sprockets.import_asset 'jquery'
 
+set :relative_links, true
 
 # --------------------------------------------------------------------------------------------------
 # Paths
