@@ -14,7 +14,7 @@ main {
 
 .container {
   @include clearfix;
-  width: 85%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 
@@ -22,17 +22,45 @@ main {
   .image-center,
   .image-right {
     @include span-columns(4);
+    position: relative;
+    @include transition(0.2s ease-in-out all);
+    overflow: hidden;
 
     img {
         height: 100%;
         max-height: 400px;
         @include transition(0.2s ease-in-out all);
-        &:hover {
+      }
+
+      .hidden-text {
+        @include clearfix;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        @include transition(0.2s ease-in-out all);
+
+        .text-container {
+          position: relative;
+          text-align: center;
+          margin-top: 35%;
+          vertical-align: middle;
+        }
+      }
+
+      &:hover {
+        img {
           @include transform(scale(1.1));
         }
+
+        .hidden-text {
+          opacity: 1;
+          background-color: rgba($medium-gray, 0.2);
+        }
+      }
     }
   }
-}
 
 footer {
   @include background-image(linear-gradient($medium-gray, $dark-gray));
