@@ -215,6 +215,8 @@ main {
     clear: both;
     content: "";
     display: table; }
+  .container .image-left .visible {
+    display: invisble; }
   .container .image-left,
   .container .image-center,
   .container .image-right {
@@ -301,7 +303,8 @@ body {
   margin-right: auto;
   background-image: -webkit-linear-gradient(#333, #999);
   background-image: linear-gradient(#333, #999);
-  height: 6rem; }
+  height: 6rem;
+  position: relative; }
   .topnav::after {
     clear: both;
     content: "";
@@ -310,8 +313,17 @@ body {
     clear: both;
     content: "";
     display: table; }
+  .topnav .mainnav {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%; }
+    .topnav .mainnav:last-child {
+      margin-right: 0; }
   .topnav ul {
-    margin-left: 10px; }
+    margin-left: 10px;
+    position: absolute;
+    bottom: 5px; }
     .topnav ul::after {
       clear: both;
       content: "";
@@ -333,6 +345,9 @@ body {
         .topnav ul li a:hover {
           color: #CCB13B; }
   .topnav .logo {
+    position: absolute;
+    bottom: -22px;
+    right: 0;
     float: left;
     display: block;
     margin-right: 2.3576515979%;
@@ -340,11 +355,12 @@ body {
     float: right; }
     .topnav .logo:last-child {
       margin-right: 0; }
-    .topnav .logo h1 a::after {
+    .topnav .logo a::after {
       clear: both;
       content: "";
       display: table; }
-    .topnav .logo h1 a img {
-      padding: 5px; }
+    .topnav .logo a img {
+      padding: 5px;
+      height: auto; }
 
 /*# sourceMappingURL=main.css.map */

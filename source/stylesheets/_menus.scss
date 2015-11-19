@@ -3,12 +3,20 @@
 	@include outer-container(100%);
 	@include background-image(linear-gradient($dark-gray, $medium-gray));
 	height: 6rem;
-
-	ul {
+    position: relative;
+    
+    .mainnav {
+        @include span-columns(8);
+    }
+	
+    ul {
 		@include clearfix;
-    margin-left: 10px;
-		li {
-      padding-top: 15px;
+        margin-left: 10px;
+        position: absolute;
+        bottom: 5px;
+		
+        li {
+            padding-top: 15px;
 			display: inline-block;
 			@include span-columns(2.5);
 
@@ -23,18 +31,18 @@
 	}
 
 	.logo {
-		//@include padding(modular-scale(1));
+        position: absolute;
+        bottom: -22px;
+        right: 0;
 		@include span-columns(4);
 		float: right;
+        a {
+			@include clearfix;
 
-		h1 {
-			a {
-				@include clearfix;
-
-				img {
-					padding: 5px;
-				}
+			img {
+				padding: 5px;
+                height: auto;
 			}
-		}
+        }
 	}
 }

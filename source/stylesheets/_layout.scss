@@ -17,6 +17,9 @@ main {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  .image-left .visible {
+      display: invisble;
+  }
 
   .image-left,
   .image-center,

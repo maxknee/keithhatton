@@ -38,8 +38,8 @@ set :js_dir,      'javascripts'
 # Pretty URLs - See https://middlemanapp.com/advanced/pretty_urls/
 activate :directory_indexes
 
-
-page "/project/*", :layout => "project"
+activate :automatic_image_sizes
+page "/project/", :layout => "project"
 
 # --------------------------------------------------------------------------------------------------
 # Build configuration
