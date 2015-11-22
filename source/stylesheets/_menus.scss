@@ -7,6 +7,9 @@
     
     .mainnav {
         @include span-columns(8);
+        @media screen and (max-width: 600px) {
+            @include span-columns(12);
+        }
     }
 	
     ul {
@@ -43,6 +46,12 @@
 				padding: 5px;
                 height: auto;
 			}
+        }
+        @media (max-width: 600px) {
+            @include span-columns(12);
+            top: 0;
+            left: 0;
+            float: none;
         }
 	}
 }

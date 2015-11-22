@@ -278,6 +278,31 @@ main {
     .container .image-right:hover .hidden-text {
       opacity: 1;
       background-color: rgba(153, 153, 153, 0.2); }
+    @media (max-width: 600px) {
+      .container .image-left,
+      .container .image-center,
+      .container .image-right {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        .container .image-left:last-child,
+        .container .image-center:last-child,
+        .container .image-right:last-child {
+          margin-right: 0; }
+        .container .image-left .hidden-text,
+        .container .image-center .hidden-text,
+        .container .image-right .hidden-text {
+          opacity: 1;
+          position: relative; }
+          .container .image-left .hidden-text:hover,
+          .container .image-center .hidden-text:hover,
+          .container .image-right .hidden-text:hover {
+            background-color: transparent; }
+          .container .image-left .hidden-text .text-container,
+          .container .image-center .hidden-text .text-container,
+          .container .image-right .hidden-text .text-container {
+            margin-top: 10px; } }
 
 footer {
   background-image: -webkit-linear-gradient(#999, #333);
@@ -320,6 +345,14 @@ body {
     width: 65.8807828007%; }
     .topnav .mainnav:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 600px) {
+      .topnav .mainnav {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        .topnav .mainnav:last-child {
+          margin-right: 0; } }
   .topnav ul {
     margin-left: 10px;
     position: absolute;
@@ -362,5 +395,16 @@ body {
     .topnav .logo a img {
       padding: 5px;
       height: auto; }
+    @media (max-width: 600px) {
+      .topnav .logo {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        float: none; }
+        .topnav .logo:last-child {
+          margin-right: 0; } }
 
 /*# sourceMappingURL=main.css.map */
