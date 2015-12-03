@@ -24,11 +24,7 @@
 			@include span-columns(2.5);
 
 			a {
-				color: $green;
 				@include transition(0.5s ease-in-out all);
-				&:hover {
-					color: $yellow;
-				}
 			}
 		}
 	}
