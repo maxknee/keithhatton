@@ -201,7 +201,7 @@ main {
   margin-right: 10px;
   padding-top: 2%;
   padding-bottom: 2%;
-  min-height: 500px; }
+  min-height: 525px; }
   main::after {
     clear: both;
     content: "";
@@ -223,13 +223,15 @@ main {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
-    width: 31.7615656014%;
+    width: 33.2969303753%;
     position: relative;
     -webkit-transition: 0.2s ease-in-out all;
     -moz-transition: 0.2s ease-in-out all;
     transition: 0.2s ease-in-out all;
     overflow: hidden;
-    max-height: 400px; }
+    max-height: 375px;
+    margin: 0;
+    padding: 0; }
     .container .image-left:last-child,
     .container .image-center:last-child,
     .container .image-right:last-child {
@@ -266,19 +268,27 @@ main {
         text-align: center;
         margin-top: 35%;
         vertical-align: middle; }
-    .container .image-left:hover img,
-    .container .image-center:hover img,
-    .container .image-right:hover img {
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      -o-transform: scale(1.1);
-      transform: scale(1.1); }
-    .container .image-left:hover .hidden-text,
-    .container .image-center:hover .hidden-text,
-    .container .image-right:hover .hidden-text {
-      opacity: 1;
-      background-color: rgba(153, 153, 153, 0.2); }
+    .container .image-left:hover,
+    .container .image-center:hover,
+    .container .image-right:hover {
+      max-height: 425px;
+      overflow: visible;
+      z-index: 1; }
+      .container .image-left:hover img, .container .image-left:hover .hidden-text,
+      .container .image-center:hover img,
+      .container .image-center:hover .hidden-text,
+      .container .image-right:hover img,
+      .container .image-right:hover .hidden-text {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1); }
+      .container .image-left:hover .hidden-text,
+      .container .image-center:hover .hidden-text,
+      .container .image-right:hover .hidden-text {
+        opacity: 1;
+        background-color: rgba(153, 153, 153, 0.2); }
     @media (max-width: 600px) {
       .container .image-left,
       .container .image-center,

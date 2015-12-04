@@ -9,7 +9,7 @@ main {
   margin-right: 10px;
   padding-top: 2%;
   padding-bottom: 2%;
-  min-height: 500px;
+  min-height: 525px;
 }
 
 .container {
@@ -24,11 +24,13 @@ main {
   .image-left,
   .image-center,
   .image-right {
-    @include span-columns(4);
+    @include span-columns(4.18);
     position: relative;
     @include transition(0.2s ease-in-out all);
     overflow: hidden;
-    max-height: 400px;
+    max-height: 375px;
+    margin: 0;
+    padding: 0;
 
     img {
         height: 100%;
@@ -54,7 +56,11 @@ main {
     }
 
     &:hover {
-      img {
+      max-height: 425px;
+      overflow: visible;
+      z-index: 1;
+
+      img, .hidden-text {
         @include transform(scale(1.1));
       }
 
