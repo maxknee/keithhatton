@@ -55,5 +55,5 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
-node_modules/
+*node_modules/*
 bower_components/
