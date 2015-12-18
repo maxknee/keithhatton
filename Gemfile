@@ -4,7 +4,6 @@ gem "middleman"
 gem "middleman-bower"
 gem "middleman-livereload"
 gem 'middleman-search_engine_sitemap'
-gem "jquery-middleman"
 
 # Source minification
 gem "middleman-minify-html"

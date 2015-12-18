@@ -19,11 +19,6 @@ activate :livereload
 set :url_root, data.config.site.root_url
 activate :search_engine_sitemap
 
-# User Bower to manage vendor scripts
-activate :bower
-
-sprockets.import_asset 'jquery'
-
 set :relative_links, true
 
 # --------------------------------------------------------------------------------------------------
@@ -41,7 +36,7 @@ activate :directory_indexes
 activate :automatic_image_sizes
 page "/project/*", :layout => "project"
 
-page "/portfolio", :layout => "portfolio"
+#page "/portfolio", :layout => "portfolio"
 
 # --------------------------------------------------------------------------------------------------
 # Build configuration
