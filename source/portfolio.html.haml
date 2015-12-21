@@ -10,6 +10,7 @@
     %ul
       - data.projects.projects.each_with_index do |project, index|
         %li.project-type 
-          %p 
-            %a=project.type
           %img{:src => "../images/#{project.images}"}
+          .hidden-text
+            .text-container
+              %a=project.type
