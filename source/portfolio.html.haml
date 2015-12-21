@@ -4,10 +4,12 @@
   meta_description: Keith Hatton's portoflio website
   meta_keywords: design, industrial design, cycling
 ---
-- imgSrc = data.projects.folder
 
 %main{role: 'portfolio'}
-  %portfolio
-    - data.projects.projects.each do |f|
-      %li= f
-    =image_tag("amarosokit.png")
+  .portfolio.container
+    %ul
+      - data.projects.projects.each_with_index do |project, index|
+        %li.project-type 
+          %p 
+            %a=project.type
+          %img{:src => "../images/#{project.images}"}

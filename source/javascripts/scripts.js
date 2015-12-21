@@ -1,5 +1,6 @@
-//= require jquery
 
+
+console.log(SmartCrop);
 $(document).ready(function($) {
 	console.log('hey');
 
@@ -10,3 +11,5 @@ $(document).ready(function($) {
         $('.image-left').addClass('visible');
     };
 });
+
+

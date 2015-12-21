@@ -99,7 +99,6 @@ footer {
   @include background-image(linear-gradient($medium-gray, $dark-gray));
   @include span-columns(12);
   height: 6rem;
-  position: fixed;
   bottom: 0;
   
   .footer-body{
