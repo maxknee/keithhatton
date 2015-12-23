@@ -52,12 +52,14 @@ configure :build do
 
   # Minify Javascript
   activate :minify_javascript
+  activate :cache_buster
+  activate :relative_assets
 
   # Minify HTML
   #activate :minify_html, {
    # remove_quotes: false,
-   # remove_input_attributes: false
- # }
+    #remove_input_attributes: false
+  #}
 
   # Compress images (default)
   require "middleman-smusher"
@@ -65,11 +67,11 @@ configure :build do
 
   # Compress ALL images (advanced)
   # Before activating the below, follow setup instructions on https://github.com/toy/image_optim
-  # activate :imageoptim do |options|
-  #   options.pngout = false # set to true when pngout is also installed
-  # end
+  activate :imageoptim do |options|
+    options.pngout = true # set to true when pngout is also installed
+  end
 
   # Uniquely-named assets (cache buster)
   # Exception: svg & png in images folder because they need to be interchangeable by JS
-  activate :asset_hash, ignore: [/images\/(.*\.png|.*\.svg)/]
+  activate :asset_hash, ignore: [/images\/(.*\.png|.*\.svg|.*\.jpg|.*\.jpeg)/]
 end

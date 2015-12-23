@@ -1,6 +1,4 @@
-
-
-console.log(SmartCrop);
+console.log('hey');
 $(document).ready(function($) {
 	console.log('hey');
 
@@ -13,3 +11,6 @@ $(document).ready(function($) {
 });
 
 
+while(screen.width > '640') {
+
+}

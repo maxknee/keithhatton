@@ -8,19 +8,11 @@
 %main{role: 'main'}
   %article
     %h1= data.page.title
-    .container
-      .image-left
-        %img(src="/images/amarosokit.png")
-        .hidden-text
-          .text-container
-            I am a kit
-      .image-center
-        %img(src="/images/theorykit.png")
-        .hidden-text
-          .text-container 
-            I am a kit
-      .image-right
-        %img(src="/images/wallet.jpg")
-        .hidden-text
-          .text-container
-            I am a wallet
+    .container 
+      %ul
+        - data.types.types.each_with_index do |type, index|
+          %li.discipline-type
+            %img{:src => "../images/#{type.images}"}
+            .hidden-text
+              .text-container
+                %a=type.type

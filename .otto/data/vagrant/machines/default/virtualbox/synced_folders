@@ -1,1 +1,0 @@
-{"virtualbox":{"/vagrant":{"owner":"vagrant","group":"vagrant","guestpath":"/vagrant","hostpath":"/Users/maxknee1/dev/keithhatton","disabled":false},"/otto/foundation-1":{"guestpath":"/otto/foundation-1","hostpath":"/Users/maxknee1/dev/keithhatton/.otto/compiled/app/foundation-consul/app-dev","disabled":false}}}

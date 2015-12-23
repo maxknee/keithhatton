@@ -23,11 +23,11 @@ module.exports = function(grunt) {
     babel: {
       options: {
         sourceMap: true,
-        presets: ['es2015', 'react']
+        presets: ['es2015']
       },
       dist: {
         files: {
-          'source/javascripts/scripts.js': 'source/javascripts/main.js'
+          'source/javascripts/all.js': 'source/javascripts/scripts.js'
         }
       }
     },
