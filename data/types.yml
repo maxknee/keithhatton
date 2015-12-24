@@ -1,11 +1,11 @@
 types:
-- type: Foundation
-  images: 1_foundation/foundation_drawing/DSC03036.JPG
-- type: Paint
-  images: 2_paint/paint_dec3/IMG_4560.JPG
-- type: Industrial
-  images: 3_Industrial/ctia_2013_photos/IMG_5528.JPG
-- type: Graphic
-  images: 4_Graphic/some_gd/lasercats/lasercat_logo.png
-- type: Photo
-  images: 5_photo/FuzzyBikes/orange.JPG
+  - type: Foundation
+    images: 1_foundation/foundation_drawing/DSC03036.JPG
+  - type: Paint
+    images: 2_paint/paint_dec3/IMG_4560.JPG
+  - type: Industrial
+    images: 3_Industrial/ctia_2013_photos/IMG_5528.JPG
+  - type: Graphic
+    images: 4_Graphic/some_gd/lasercats/lasercat_logo.png
+  - type: Photo
+    images: 5_photo/FuzzyBikes/orange.JPG

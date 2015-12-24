@@ -36,8 +36,9 @@ activate :directory_indexes
 activate :automatic_image_sizes
 page "/project/*", :layout => "project"
 
-data.types.each do |type| 
-  proxy "/project/#{types.type}.html", "/project/template.html", :locals => { :project_name => name}
+data.types.types.each do |types| 
+  proxy "/project/#{types[:type]}.html", "/project.html", :locals => { :project_name => types}, :ignore => true
+end
 
 #page "/portfolio", :layout => "portfolio"
 
