@@ -15,4 +15,4 @@
             %img{:src => "../images/#{type.images}"}
             .hidden-text
               .text-container
-                %a=type.type
+                = link_to "#{type.type}" , "project/#{type.type}.html"
