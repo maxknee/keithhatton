@@ -27,7 +27,7 @@
       position: relative;
       text-align: center;
       margin-top: 35%;
-      vertical-align: middle;
+      vertical-align: middle; 
     }
   }
 
@@ -43,6 +43,12 @@
     .hidden-text {
       opacity: 1;
       background-color: rgba($medium-gray, 0.2);
+
+      a {
+        border: 1px solid $action-color;
+        padding: 0.5rem 1rem;
+        background-color: shade(rgba($light-gray, 0.5), 25%);
+      }
     }
   }
 

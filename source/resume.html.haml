@@ -27,4 +27,23 @@
       %li More experience
       %li stuff
 
-  
+  .resume-titles
+    .objective-title 
+      Objective
+    .experience-title
+      Experience
+    .education-title
+      Education
+    .skills-title
+      Skills
+    .awards-exhibition
+      Awards/Exhibitions
+    .references-title
+      References
+  .resume-content
+    .objective-content
+      To join an establishment with drive, passion and creative consideration...
+    .experience-content
+      - data.resume.experience.each_with_index do | employer, index|
+        %li.hey
+          #{employer.employer}

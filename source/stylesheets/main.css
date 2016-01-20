@@ -265,6 +265,10 @@ main {
       .container .discipline-type:hover .hidden-text {
         opacity: 1;
         background-color: rgba(153, 153, 153, 0.2); }
+        .container .discipline-type:hover .hidden-text a {
+          border: 1px solid #5EFFFE;
+          padding: 0.5rem 1rem;
+          background-color: rgba(111, 111, 111, 0.625); }
     @media (max-width: 600px) {
       .container .discipline-type {
         float: left;
@@ -447,6 +451,10 @@ body {
     .portfolio .project-type:hover .hidden-text {
       opacity: 1;
       background-color: rgba(153, 153, 153, 0.2); }
+      .portfolio .project-type:hover .hidden-text a {
+        border: 1px solid #5EFFFE;
+        padding: 0.5rem 1rem;
+        background-color: rgba(111, 111, 111, 0.625); }
   @media (max-width: 600px) {
     .portfolio .project-type {
       float: left;
@@ -474,5 +482,15 @@ body {
       margin: 0; }
       .portfolio .project-type:last-child {
         margin-right: 0; } }
+
+.resume-titles {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%;
+  float: left;
+  border-right: 1px solid green; }
+  .resume-titles:last-child {
+    margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */

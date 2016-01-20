@@ -1,0 +1,5 @@
+.resume-titles {
+  @include span-columns(4);
+  float: left;
+  border-right: 1px solid green;
+}
