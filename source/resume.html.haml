@@ -15,35 +15,61 @@
     %h1= "Keith's Resume"
     %h2= "Philadelphia"
     %h2= mail_to "KeithHatton@gmail.com", 'Email Me', subject: "Reaching Out"
-
-  %section.about
-    %p My name is keith and I am design things in philadelphia. I like cool thigns like cars and bicycles. I also make screen protectors and its pretty cool. I live with Brendy and a cat and I am obsessed with back to the future for some reason... But read my resume and feel free to reach out to me to hire me!!!
-
-  %section.work
-    %ul.work
-      %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      %li More experience
-      %li More expereince
-      %li More experience
-      %li stuff
+    %h3
+      =link_to "Resume", "resume.pdf"
 
   .resume-titles
-    .objective-title 
+    .objective-title.title
       Objective
-    .experience-title
+    .experience-title.title
       Experience
-    .education-title
+    .education-title.title
       Education
-    .skills-title
+    .skills-title.title
       Skills
-    .awards-exhibition
+    .awards-exhibition.title
       Awards/Exhibitions
-    .references-title
+    .references-title.title
       References
   .resume-content
-    .objective-content
+    .objective-content.content
       To join an establishment with drive, passion and creative consideration...
-    .experience-content
-      - data.resume.experience.each_with_index do | employer, index|
-        %li.hey
-          #{employer.employer}
+    .experience-content.content
+      - data.resume.experience.each_with_index do | employer, index |
+        %li.job
+          #{employer.date}
+          .employer
+            #{employer.employer}
+          .position
+            #{employer.position}
+          .duties
+            #{employer.body}
+    .education-content.content
+      - data.resume.education.each_with_index do | education, index |
+        %li.school
+          #{education.school}
+          .date
+            #{education.date}
+          .degree
+            #{education.degree}
+    .skills-content.content
+      - data.resume.skills.each_with_index do | skills, index | 
+        %li.skills
+          #{skills.skill}
+          .body
+            #{skills.body}
+    .awards-content.content
+      - data.resume.awards.each_with_index do | awards, index | 
+        %li.awards
+          #{awards.award}
+          .body
+            #{awards.body}
+    .exhibition-content.content
+      - data.resume.exhibition.each_with_index do | exhi, index | 
+        %li.exhibition
+          #{exhi.what}
+    .references-content.content
+      - data.resume.references.each_with_index do | ref, index |
+        %li.references
+          #{ref.reference}
+

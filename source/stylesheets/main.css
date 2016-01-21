@@ -487,10 +487,31 @@ body {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 31.7615656014%;
+  width: 23.2317613015%;
   float: left;
-  border-right: 1px solid green; }
+  border-right: 1px solid green;
+  height: 100%; }
   .resume-titles:last-child {
     margin-right: 0; }
+  .resume-titles .title {
+    font-size: 2.4rem;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+
+.resume-content {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 65.8807828007%;
+  height: 100%; }
+  .resume-content:last-child {
+    margin-right: 0; }
+  .resume-content .content {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+    .resume-content .content .employer {
+      font-weight: 700; }
+  .resume-content li {
+    list-style: none; }
 
 /*# sourceMappingURL=main.css.map */
