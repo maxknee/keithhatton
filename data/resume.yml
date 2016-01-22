@@ -28,10 +28,14 @@ education:
     date: Fall 2003 - Spring 2007
     degree: Bachelor of Science - Industrial Design
 skills:
-  - skill: Design/ All aspects from concept to completion. Able to work collaboratively or independently.
-  - skill: Computer/ Adobe Suite, Google Sketch-Up, Concepts Unlimited
-  - skill: Model Making/ Proficient in all shop tools from hand tools to high tech machines.
-  - skill: Photography/ Experienced in digital product documentation as well as photo touch up. Proficient in product advertising/editing.
+  - skill: Design/ 
+    body: All aspects from concept to completion. Able to work collaboratively or independently.
+  - skill: Computer/
+    body: Adobe Suite, Google Sketch-Up, Concepts Unlimited
+  - skill: Model Making/
+    body: Proficient in all shop tools from hand tools to high tech machines.
+  - skill: Photography/ 
+    body: Experienced in digital product documentation as well as photo touch up. Proficient in product advertising/editing.
 awards:
   - award: Promising Artist Award from University/ $8,000
     body: Yearly tuition awarded for academic excellence
