@@ -17,59 +17,61 @@
     %h2= mail_to "KeithHatton@gmail.com", 'Email Me', subject: "Reaching Out"
     %h3
       =link_to "Resume", "resume.pdf"
-
-  .resume-titles
-    .objective-title.title
-      Objective
-    .experience-title.title
-      Experience
-    .education-title.title
-      Education
-    .skills-title.title
-      Skills
-    .awards-exhibition.title
-      Awards/Exhibitions
-    .references-title.title
-      References
-  .resume-content
-    .objective-content.content
-      To join an establishment with drive, passion and creative consideration...
-    .experience-content.content
-      - data.resume.experience.each_with_index do | employer, index |
-        %li.job
-          #{employer.date}
-          .employer
-            #{employer.employer}
-          .position
-            #{employer.position}
-          .duties
-            #{employer.body}
-    .education-content.content
-      - data.resume.education.each_with_index do | education, index |
-        %li.school
-          #{education.school}
-          .date
-            #{education.date}
-          .degree
-            #{education.degree}
-    .skills-content.content
-      - data.resume.skills.each_with_index do | skills, index | 
-        %li.skills
-          #{skills.skill}
-          .body
-            #{skills.body}
-    .awards-content.content
-      - data.resume.awards.each_with_index do | awards, index | 
-        %li.awards
-          #{awards.award}
-          .body
-            #{awards.body}
-    .exhibition-content.content
-      - data.resume.exhibition.each_with_index do | exhi, index | 
-        %li.exhibition
-          #{exhi.what}
-    .references-content.content
-      - data.resume.references.each_with_index do | ref, index |
-        %li.references
-          #{ref.reference}
-
+  .resume-wrapper
+    .resume-entry
+      .objective-title.resume-title
+        Objective
+      .objective-content.content
+        To join an establishment with drive, passion and creative consideration...
+    .resume-entry
+      .experience-title.title.resume-title
+        Experience
+      .experience-content.content
+        - data.resume.experience.each_with_index do | employer, index |
+          %li.job
+            #{employer.date}
+            .employer
+              #{employer.employer}
+            .position
+              #{employer.position}
+            .duties
+              #{employer.body}
+    .resume-entry
+      .education-title.title.resume-title
+        Education
+      .education-content.content
+        - data.resume.education.each_with_index do | education, index |
+          %li.school
+            #{education.school}
+            .date
+              #{education.date}
+            .degree
+              #{education.degree}
+    .resume-entry
+      .skills-title.title.resume-title
+        Skills
+      .skills-content.content
+        - data.resume.skills.each_with_index do | skills, index |
+          %li.skills
+            #{skills.skill}
+            .body
+              #{skills.body}
+    .resume-entry
+      .awards-exhibition.title.resume-title
+        Awards/Exhibitions
+      .awards-content.content
+        - data.resume.awards.each_with_index do | awards, index |
+          %li.awards
+            #{awards.award}
+            .body
+              #{awards.body}
+        - data.resume.exhibition.each_with_index do | exhi, index |
+          %li.exhibition
+            #{exhi.what}
+    .resume-entry
+      .references-title.title.resume-title
+        References
+      .references-content.content
+        - data.resume.references.each_with_index do | ref, index |
+          %li.references
+            #{ref.reference}

@@ -483,35 +483,45 @@ body {
       .portfolio .project-type:last-child {
         margin-right: 0; } }
 
-.resume-titles {
-  float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 23.2317613015%;
-  float: left;
-  border-right: 1px solid green;
-  height: 100%; }
-  .resume-titles:last-child {
-    margin-right: 0; }
-  .resume-titles .title {
+.resume-entry {
+  max-width: 108.8em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .resume-entry::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .resume-entry .resume-title {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 23.2317613015%;
+    float: left;
+    height: 100%;
     font-size: 2.4rem;
     padding-top: 5px;
-    padding-bottom: 5px; }
-
-.resume-content {
-  float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 65.8807828007%;
-  height: 100%; }
-  .resume-content:last-child {
-    margin-right: 0; }
-  .resume-content .content {
-    margin-top: 5px;
-    margin-bottom: 5px; }
-    .resume-content .content .employer {
-      font-weight: 700; }
-  .resume-content li {
-    list-style: none; }
+    padding-bottom: 5px;
+    line-height: 1; }
+    .resume-entry .resume-title:last-child {
+      margin-right: 0; }
+  .resume-entry .content {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%;
+    height: 100%;
+    border-left: 1px solid green;
+    padding-left: 30px; }
+    .resume-entry .content:last-child {
+      margin-right: 0; }
+    .resume-entry .content .content {
+      margin-top: 5px;
+      margin-bottom: 5px; }
+      .resume-entry .content .content .employer {
+        font-weight: 700; }
+    .resume-entry .content li {
+      list-style: none; }
 
 /*# sourceMappingURL=main.css.map */

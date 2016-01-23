@@ -12,5 +12,5 @@ $(document).ready(function($) {
 
 
 while(screen.width > '640') {
-
+	console.log()
 }

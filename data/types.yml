@@ -1,11 +1,11 @@
 types:
   - type: Foundation
-    images: 1_foundation/foundation_drawing/DSC03036.JPG
+    images: horn.jpg
   - type: Paint
-    images: 2_paint/paint_dec3/IMG_4560.JPG
+    images: reaching_man.jpg
   - type: Industrial
-    images: 3_Industrial/ctia_2013_photos/IMG_5528.JPG
+    images: woman_sitting.jpg
   - type: Graphic
-    images: 4_Graphic/some_gd/lasercats/lasercat_logo.png
+    images: elite_black2.jpg
   - type: Photo
-    images: 5_photo/FuzzyBikes/orange.JPG
+    images: elite_black2.jpg

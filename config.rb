@@ -40,7 +40,7 @@ data.types.types.each do |types|
   proxy "/project/#{types[:type]}.html", "/project.html", :locals => { :project_name => types}, :ignore => true
 end
 
-#page "/portfolio", :layout => "portfolio"
+#page "/portfolio", ::layout => "portfolio"
 
 # --------------------------------------------------------------------------------------------------
 # Build configuration
