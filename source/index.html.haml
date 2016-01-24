@@ -12,7 +12,7 @@
       %ul
         - data.types.types.each_with_index do |type, index|
           %li.discipline-type
-            %img{:src => "../images/#{type.images}"}
+            %img{:src => "../images/#{type.type}/#{type.images}"}
             .hidden-text
               .text-container
                 = link_to "#{type.type}" , "project/#{type.type}.html"
