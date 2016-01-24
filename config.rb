@@ -5,6 +5,8 @@
 helpers do
   # Helpers are defined in and can be added to `helpers/custom_helpers.rb`.
   # In case you require helpers within `config.rb`, they can be added here.
+  require "helpers/active_nav_helper"
+  helpers ActiveNavHelper
 end
 
 
@@ -34,11 +36,12 @@ set :js_dir,      'javascripts'
 activate :directory_indexes
 
 activate :automatic_image_sizes
+
 page "/project/*", :layout => "project"
 
-data.types.types.each do |types| 
-  proxy "/project/#{types[:type]}.html", "/project.html", :locals => { :project_name => types}, :ignore => true
-end
+#data.types.types.each do |types|
+ # proxy "/project/#{types[:type]}.html", "/project.html", :locals => { :project_name => types}, :ignore => true
+#end
 
 #page "/portfolio", ::layout => "portfolio"
 
