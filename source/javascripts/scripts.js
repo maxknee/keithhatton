@@ -1,16 +1,12 @@
-console.log('hey');
 $(document).ready(function($) {
 	console.log('hey');
+	console.log($('.imageleft'));
 
-    console.log($('.imageleft'));
+	$('.portfolio-container').masonry({
+  	// options
+  	itemSelector: '.discipline-type',
+  	columnWidth: 500
+  	console.log($('.discipline-type'));
+	});
 
-    while (!($('.image-left').hasClass('visible'))){
-        console.log('hey + 1');
-        $('.image-left').addClass('visible');
-    };
 });
-
-
-while(screen.width > '640') {
-	console.log()
-}

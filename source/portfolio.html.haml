@@ -9,8 +9,7 @@
   .portfolio.container
     %ul
       - data.projects.projects.each_with_index do |project, index|
-        %li.project-type 
+        %li.project-type
           %img{:src => "../images/#{project.images}"}
           .hidden-text
             .text-container
-              %a=project.typ

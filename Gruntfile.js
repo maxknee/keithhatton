@@ -31,6 +31,13 @@ module.exports = function(grunt) {
         }
       }
     },
+    concat: {
+      basic_and_extras: {
+        files: {
+          'source/javascripts/final.js': ['source/javascripts/vendor/masonry.pkgd.js', 'source/javascripts/all.js']
+        }
+      }
+    },
     watch: {
       options: {
         livereload: true,
@@ -42,19 +49,20 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['source/javascripts/*.js', 'source/javascripts/vendor/*.js'],
-        tasks: ['babel:dist']
+        tasks: ['babel:dist', 'concat']
       }
     },
     wiredep: {
       task: {
-        src: 'source/layouts/layout.html.haml'          
+        src: 'source/layouts/layout.html.haml'
       }
     }
   });
   grunt.loadNpmTasks('grunt-middleman');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-  grunt.registerTask('default', ['sass', 'babel', 'wiredep']);
-  grunt.registerTask('watch', ['sass', 'wiredep', 'babel', 'middleman', 'watch']);
+  grunt.registerTask('default', ['sass', 'babel', 'concat', 'wiredep']);
+  grunt.registerTask('watch', ['sass', 'wiredep', 'babel', 'concat', 'watch']);
   grunt.loadNpmTasks('grunt-contrib-watch');
 }
 
