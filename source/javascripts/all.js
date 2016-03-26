@@ -1,16 +1,17 @@
 'use strict';
 
-console.log('hey');
 $(document).ready(function ($) {
-    console.log('hey');
+  var $grid = $('.grid').masonry({
+    // options
+    itemSelector: '.discipline-type',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+    gutter: '.gutter-sizer',
+    ftiWdith: true
+  });
 
-    console.log($('.imageleft'));
-
-    while (!$('.image-left').hasClass('visible')) {
-        console.log('hey + 1');
-        $('.image-left').addClass('visible');
-    };
+  $grid.imagesLoaded().progress(function () {
+    $grid.masonry('layout');
+  });
 });
-
-while (screen.width > '640') {}
 //# sourceMappingURL=all.js.map

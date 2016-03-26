@@ -8,3 +8,7 @@
 %main{role: 'project'}
 	%article
 		%h1= data.page.title
+		.container
+			- data.paint.paints.each_with_index do |paints, index|
+				.project-type
+					%img{:src => "/images/Paint/#{paints.images}"}

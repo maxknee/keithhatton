@@ -1,10 +1,10 @@
 @mixin image-container {
-  @include span-columns(4.18);
+  //width: 33.33%;
   position: relative;
   @include transition(0.2s ease-in-out all);
   overflow: hidden;
   max-height: 340px;
-  margin: 0;
+  //margin: 0;
   padding: 0;
 
   img {
@@ -27,7 +27,7 @@
       position: relative;
       text-align: center;
       margin-top: 35%;
-      vertical-align: middle; 
+      vertical-align: middle;
     }
   }
 
@@ -54,7 +54,6 @@
 
   @media (max-width: 600px) {
     @include span-columns(12);
-    
     //max-height: 225px;
 
     .hidden-text{

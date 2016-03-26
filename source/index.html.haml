@@ -8,11 +8,11 @@
 %main{role: 'main'}
   %article
     %h1= data.page.title
-    .container 
-      %ul
-        - data.types.types.each_with_index do |type, index|
-          %li.discipline-type
-            %img{:src => "../images/#{type.type}/#{type.images}"}
-            .hidden-text
-              .text-container
-                = link_to "#{type.type}" , "project/#{type.type}.html"
+    .container
+      - data.types.types.each_with_index do |type, index|
+        .grid-sizer
+        .discipline-type
+          %img{:src => "../images/#{type.type}/#{type.images}"}
+          .hidden-text
+            .text-container
+              = link_to "#{type.type}" , "project/#{type.type}.html"

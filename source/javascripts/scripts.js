@@ -1,12 +1,16 @@
-$(document).ready(function($) {
-	console.log('hey');
-	console.log($('.imageleft'));
+'use strict';
 
-	$('.portfolio-container').masonry({
+$(document).ready(function($) {
+	var $grid  = $('.container').masonry({
   	// options
   	itemSelector: '.discipline-type',
-  	columnWidth: 500
-  	console.log($('.discipline-type'));
+  	columnWidth: '.grid-sizer',
+  	percentPosition: true,
+  	gutter: '.gutter-sizer',
+  	ftiWdith: true
 	});
 
+	$grid.imagesLoaded().progress( function(){
+		$grid.masonry('layout');
+	});
 });

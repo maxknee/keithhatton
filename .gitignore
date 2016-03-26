@@ -11,7 +11,7 @@
 /build
 
 /node_modules
-/bower
+source/javascripts/vendor/*
 
 # Ignore cache
 /.sass-cache

@@ -1,6 +1,9 @@
+* { box-sizing: border-box; }
+
 .html {
     font-size: $base-font-size;
     overflow: hidden;
+    overflow-y: scroll;
 }
 
 main {
@@ -19,7 +22,16 @@ main {
   margin-right: auto;
 
   .discipline-type {
-    @include image-container; 
+    @include image-container;
+    float: left;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 32%;
+    margin-right: 10px;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
 
     &:hover {
       max-height: 340px;
@@ -27,7 +39,7 @@ main {
     }
 
     @media (max-width: 1024px) {
-      @include span-columns(6);
+      //@include span-columns(6);
       margin: 0;
     }
   }
@@ -38,7 +50,7 @@ footer {
   @include span-columns(12);
   height: 6rem;
   bottom: 0;
-  
+
   .footer-body{
     margin-left: 10px;
     margin-right: 10px;
@@ -49,3 +61,12 @@ body {
     font-size: 1rem;
     background-color: darken($secondary-background-color, 10%);
 }
+
+.grid-sizer {
+  //width: 33.33%;
+}
+
+.gutter-sizer {
+  width: 3%;
+}
+

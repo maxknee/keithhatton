@@ -189,9 +189,13 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+* {
+  box-sizing: border-box; }
+
 .html {
   font-size: 1rem;
-  overflow: hidden; }
+  overflow: hidden;
+  overflow-y: scroll; }
 
 main {
   margin-left: 10px;
@@ -213,20 +217,18 @@ main {
     content: "";
     display: table; }
   .container .discipline-type {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 33.2969303753%;
     position: relative;
     -webkit-transition: 0.2s ease-in-out all;
     -moz-transition: 0.2s ease-in-out all;
     transition: 0.2s ease-in-out all;
     overflow: hidden;
     max-height: 340px;
-    margin: 0;
-    padding: 0; }
-    .container .discipline-type:last-child {
-      margin-right: 0; }
+    padding: 0;
+    float: left;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 32%;
+    margin-right: 10px; }
     .container .discipline-type img {
       height: 100%;
       max-height: 340px;
@@ -284,18 +286,14 @@ main {
             margin-top: 10px; }
         .container .discipline-type:hover .hidden-text {
           background-color: transparent; } }
+    .container .discipline-type:nth-child(3) {
+      margin-right: 0; }
     .container .discipline-type:hover {
       max-height: 340px;
       overflow: hidden; }
     @media (max-width: 1024px) {
       .container .discipline-type {
-        float: left;
-        display: block;
-        margin-right: 2.3576515979%;
-        width: 48.821174201%;
-        margin: 0; }
-        .container .discipline-type:last-child {
-          margin-right: 0; } }
+        margin: 0; } }
 
 footer {
   background-image: -webkit-linear-gradient(#999, #333);
@@ -315,6 +313,9 @@ footer {
 body {
   font-size: 1rem;
   background-color: #dedede; }
+
+.gutter-sizer {
+  width: 3%; }
 
 .topnav {
   max-width: 100%;
@@ -399,20 +400,13 @@ body {
           margin-right: 0; } }
 
 .portfolio .project-type {
-  float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 33.2969303753%;
   position: relative;
   -webkit-transition: 0.2s ease-in-out all;
   -moz-transition: 0.2s ease-in-out all;
   transition: 0.2s ease-in-out all;
   overflow: hidden;
   max-height: 340px;
-  margin: 0;
   padding: 0; }
-  .portfolio .project-type:last-child {
-    margin-right: 0; }
   .portfolio .project-type img {
     height: 100%;
     max-height: 340px;

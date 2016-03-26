@@ -34,7 +34,7 @@ module.exports = function(grunt) {
     concat: {
       basic_and_extras: {
         files: {
-          'source/javascripts/final.js': ['source/javascripts/vendor/masonry.pkgd.js', 'source/javascripts/all.js']
+          'source/javascripts/final.js': ['source/javascripts/vendor/imagesloaded/imagesloaded.pkgd.js', 'source/javascripts/vendor/masonry.pkgd.js', 'source/javascripts/all.js']
         }
       }
     },
