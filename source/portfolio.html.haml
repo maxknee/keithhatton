@@ -1,0 +1,15 @@
+---
+  title: Keith Hatton
+  body_classes: portfolio
+  meta_description: Keith Hatton's portoflio website
+  meta_keywords: design, industrial design, cycling
+---
+
+%main{role: 'portfolio'}
+  .portfolio.container
+    %ul
+      - data.projects.projects.each_with_index do |project, index|
+        %li.project-type
+          %img{:src => "../images/#{project.images}"}
+          .hidden-text
+            .text-container

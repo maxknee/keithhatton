@@ -1,0 +1,33 @@
+{
+  "name": "keithhatton",
+  "version": "0.5.1",
+  "description": "keith hatton",
+  "author": {
+    "name": "Patrik Affentranger",
+    "url": "http://patrikaffentranger.me"
+  },
+  "license": "MIT",
+  "homepage": "http://www.keithhatton.com",
+  "dependencies": {
+    "normalize.css": "~3.0.3",
+    "jquery": "~2.1.4",
+    "imagesloaded": "^4.1.0"
+  },
+  "authors": [
+    "maxknee <maxknee@gmail.com>"
+  ],
+  "main": "",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/bower",
+    "test",
+    "tests"
+  ]
+}

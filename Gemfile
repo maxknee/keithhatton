@@ -1,14 +1,14 @@
-# If you do not have OpenSSL installed, update
-# the following line to use "http://" instead
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.4.0"
+gem "middleman"
+gem "middleman-bower"
+gem "middleman-livereload"
+gem 'middleman-search_engine_sitemap'
 
-# Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+# Source minification
+gem "middleman-minify-html"
+gem "middleman-smusher"
 
-# For faster file watcher updates on Windows:
-gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
-
-# Windows does not come with time zone data
-gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
+# middleman-optim requires external utilities:
+#   All setup instructions can be found here: https://github.com/toy/image_optim
+gem 'middleman-imageoptim'

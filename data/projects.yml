@@ -1,0 +1,13 @@
+projects:
+- type: Cycling
+  images: amarosokit.png
+- type: Design
+  images: wallet.jpg
+- type: Graphic Design
+  images: keithscream.png
+- type: Industrial Design
+  images: some_gd/owl_necklace.png
+- type: Photography
+  images: some_gd/xmas_cross_koozies.png
+- type: Art
+  images: some_gd/picses_fish_earings.png

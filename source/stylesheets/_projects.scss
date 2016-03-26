@@ -1,0 +1,16 @@
+.portfolio {
+
+	.project-type {
+		@include image-container;
+
+		&:hover {
+			max-height: 340px;
+			overflow: hidden;
+		}
+
+    @media (max-width: 1024px) {
+      @include span-columns(6);
+      margin: 0;
+    }
+	}
+}

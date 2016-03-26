@@ -1,0 +1,13 @@
+paints:
+- name: black-elite
+  images: dec3/elite_black18.jpg
+- name: green-elite
+  images: dec3/elite_green.jpg
+- name: paint house
+  images: painthouse/painthouse_build3.jpg
+- name: paint house
+  images: painthouse/painthouse_build7.jpg
+- name: paint house
+  images: painthouse/painthouse_build4.jpg
+- name: paint house
+  images: painthouse/painthouse_build1.jpg

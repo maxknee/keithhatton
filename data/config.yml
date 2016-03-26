@@ -1,0 +1,20 @@
+# Site wide settings
+site:
+  root_url: http://www.keithhatton.com
+  title: KeithHatton.com
+  title_separator: " &mdash; "
+  meta_description: Keith Hatton designer
+  meta_keywords:
+    - industrial designer
+    - graphic designer
+    - cyclist
+    - print design
+  author: Keith Hatton
+  active_navigation_item_class: current
+  analytics_id: UA-XXXXXXX-XX
+
+# Author of CSS & JavaScript
+source:
+  author: 
+    name: Max Knee
+    uri: http://www.maxknee.com
